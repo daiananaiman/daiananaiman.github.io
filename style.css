@@ -1,0 +1,218 @@
+body {
+	/*background-color: rgb(235, 226, 197);*/
+	background-image: linear-gradient(#f4a908, #4b2920, #905e1a, #444e3b, #74a742, #a2cf77,/* #bb7623,*/ #706e83, #cc8e43, #5a5d7c, #474959, #3f4048);
+	/*#bb7623, #cc8e43, #5a5d7c, #474959, #3f4048*/
+	margin: 0;
+	color: white;
+}
+
+.menu {
+	display: table;
+	margin: 0 auto;
+}
+
+.menu li {
+	background-color: #a66930;
+	/*background-image: url('paimon.png') no-repeat 6px center;*/
+	background-image: url('flower.png');
+	background-size: 60px;
+	background-repeat: no-repeat;
+	padding: 55px;
+	background-position: left center;
+	display: inline;
+}
+
+li:link1 {
+	background-image: url('paimon.png');
+}
+
+h2 {
+   color: white;
+	border-left: 6px;
+	border-color: rgba(4, 0, 255, 0.219);
+	border-left-style: inset;
+	background-color: #5d8a32;
+	line-height: 2;
+	
+	text-align: left;
+	vertical-align: bottom;
+}
+
+#taskh {
+	background-color: #a66930;
+}
+
+h3 {
+   color: white;
+	border-left: 4px;
+	border-color: rgba(4, 0, 255, 0.219);
+	border-left-style: inset;
+	display: block;
+	background-color: #5d8a32;
+	line-height: 1,5;
+	margin-left: 20px;
+	text-align: left;
+}
+
+p {
+	margin: 20px;
+}
+
+#requirements {
+	text-align: center;
+}
+
+ul {
+	text-align: left;
+}
+
+.leftP {
+	text-align: left;
+}
+
+#submission {
+	text-align: center;
+	margin: auto;
+}
+
+.centeredP {
+	text-align: center;
+	margin: auto;
+	width: 60%;
+}
+
+#groupUL {
+	list-style-type: none;
+	text-align: center;
+}
+
+#main-heading {
+	text-align: center;
+}
+
+.banner {
+    background-image: url('tulki_spit.jpg');
+    opacity: 82%;
+    height: 628px;
+    width: 100%;
+    margin: auto;
+    align-self: center;
+		background-size: cover;
+}
+
+#logo {
+	width: 60px;
+	height: 45px;
+}
+
+#task {
+		background-image: url('forest2.jpg');
+		width: 100%;
+		height: 500px;
+		display: block;
+}
+
+#natureimg {
+/*  margin-left: auto;
+  margin-right: auto;*/
+  background-image: url(tulkiler.gif);
+  margin: auto;
+  width: 500px;
+  height: 600;
+  /*width: 40%;*/
+  display: block;
+}
+
+[class$="P"] {
+	font-family: monospace;
+}
+
+@font-face {
+	font-family: scriptfont;
+	src:  url(Lonelyday.otf);
+}
+	
+a {
+	font-family: scriptfont;
+	font-size: 30px;
+}
+
+a:link {
+  color: white;
+/*  font-size: 20px;
+  background: -webkit-linear-gradient(to right, #eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+}
+
+/* visited link */
+a:visited {
+  color: #f4a908;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+#horisontal-cat {
+	width:300px;
+	list-style: none; 
+	padding-top:30px;
+	display:inline-block;
+}
+#horisontal-cat li {
+	border-radius:3px 3px 3px 3px; 
+	margin-top:5px;
+	width:150px;
+	background: #000000;
+	background: -moz-linear-gradient(top, #161616 0%, #000000 100%);
+	background: -webkit-linear-gradient(top, #161616 0%,#000000 100%);
+	background: -o-linear-gradient(top, #161616 0%,#000000 100%);
+	border-left:1px solid #111;
+        border-top:1px solid #111; 
+        border-right:1px solid #333; 
+        border-bottom:1px solid #333;
+ }
+ #horisontal-cat li a { 
+	color:#fff; 
+	display:block; 
+	padding:10px;
+}
+
+#horisontal-cat li a:hover { 
+	color:#00c6ff;
+}
+
+#horisontal-cat li.animation { 
+	-moz-transition: all 0.4s ease-in-out; 
+	-moz-transform:translateX(0px); 
+	-o-transition: all 0.4s ease-in-out; 
+	-o-transform:translateX(0px); 
+	-webkit-transition: all 0.4s ease-in-out; 
+	-webkit-transform:translateX(0px); 
+}
+
+#horisontal-cat li.animation:hover { 
+	-moz-transform:translateX(25px);
+	-o-transform:translateX(25px);
+	-webkit-transform:translateX(25px);
+}
+.horizontal-items li {
+	display: inline-block;
+	padding: 20px;
+	margin-left: 50px;
+}
+.quick_links li{
+	background-image: url('icon.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    padding: 55px;
+    background-position: left center;
+    display: inline;
+}
+
