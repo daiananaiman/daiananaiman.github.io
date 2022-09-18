@@ -13,17 +13,12 @@ body {
 
 .menu li {
 	background-color: #a66930;
-	/*background-image: url('paimon.png') no-repeat 6px center;*/
 	background-image: url('flower.png');
 	background-size: 60px;
 	background-repeat: no-repeat;
 	padding: 55px;
 	background-position: left center;
 	display: inline;
-}
-
-li:link1 {
-	background-image: url('paimon.png');
 }
 
 h2 {
@@ -121,6 +116,7 @@ ul {
   height: 600;
   /*width: 40%;*/
   display: block;
+  cursor: url(catty3.png), auto;
 }
 
 [class$="P"] {
@@ -131,7 +127,7 @@ ul {
 	font-family: scriptfont;
 	src:  url(Lonelyday.otf);
 }
-	
+
 a {
 	font-family: scriptfont;
 	font-size: 30px;
@@ -139,26 +135,25 @@ a {
 
 a:link {
   color: white;
-/*  font-size: 20px;
-  background: -webkit-linear-gradient(to right, #eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
 }
 
-/* visited link */
 a:visited {
   color: #f4a908;
 }
 
-/* mouse over link */
 a:hover {
-  color: #FF00FF;
+	color: black;
 }
 
-/* selected link */
+a[id]:hover {
+  color: black;
+  box-shadow: inset 200px 0 0 0 white;
+}
+
 a:active {
   color: #0000FF;
 }
+
 #horisontal-cat {
 	width:300px;
 	list-style: none; 
@@ -237,3 +232,17 @@ p {
 .third {
     width: 25%;
   }
+
+a[id] {
+	font-family: scriptfont;
+	font-size: 30px;
+    box-shadow: inset 0 0 0 0 lightgrey;
+    padding: 0 0.25rem;
+    margin: 0 -0.25rem;
+    transition: color .6s ease-in-out, box-shadow .6s ease-in-out;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solide white;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
