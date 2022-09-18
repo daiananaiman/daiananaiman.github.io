@@ -178,7 +178,7 @@ a:active {
         border-right:1px solid #333; 
         border-bottom:1px solid #333;
  }
- #horisontal-cat li a { 
+#horisontal-cat li a { 
 	color:#fff; 
 	display:block; 
 	padding:10px;
@@ -215,4 +215,25 @@ a:active {
     background-position: left center;
     display: inline;
 }
-
+.lay {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px;
+  }
+h4 {
+    text-align: center;
+  }
+p {
+    border: 3px;
+  }
+.first {
+    width: 25%;
+  }
+  
+.second {
+    width: 50%;
+  }
+  
+.third {
+    width: 25%;
+  }
