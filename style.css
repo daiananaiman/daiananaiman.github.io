@@ -4,21 +4,30 @@ body {
 	/*#bb7623, #cc8e43, #5a5d7c, #474959, #3f4048*/
 	margin: 0;
 	color: white;
+	/* font-size: 3vw; */
 }
 
 .menu {
-	display: table;
+	/* display: flex; */
+	font-size: 3vw;
 	margin: 0 auto;
+	max-width: 80%
 }
 
 .menu li {
 	background-color: #a66930;
-	background-image: url('flower.png');
-	background-size: 60px;
-	background-repeat: no-repeat;
-	padding: 55px;
-	background-position: left center;
-	display: inline;
+    background-image: url(flower.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    padding: 55px;
+    background-position: left center;
+    display: inline-flex;
+    width: 100px;
+    height: 40px;
+    /* display: grid; */
+    margin: 5px;
+    border-radius: 10px;
+    /* gap: 0 0; */
 }
 
 h2 {
@@ -26,7 +35,7 @@ h2 {
 	border-left: 6px;
 	border-color: rgba(4, 0, 255, 0.219);
 	border-left-style: inset;
-	background-color: #5d8a32;
+	/* background-color: #5d8a32; */
 	line-height: 2;
 	
 	text-align: left;
@@ -40,13 +49,15 @@ h2 {
 h3 {
    color: white;
 	border-left: 4px;
-	border-color: rgba(4, 0, 255, 0.219);
+	/* border-color: rgba(4, 0, 255, 0.219); */
+	border-color: transparent;
 	border-left-style: inset;
 	display: block;
-	background-color: #5d8a32;
+	/* background-color: #5d8a32; */
 	line-height: 1,5;
 	margin-left: 20px;
 	text-align: left;
+	font-weight: bold;
 }
 
 p {
@@ -67,7 +78,7 @@ ul {
 
 #submission {
 	text-align: center;
-	margin: auto;
+	margin: 0;
 }
 
 .centeredP {
@@ -86,13 +97,17 @@ ul {
 }
 
 .banner {
-    background-image: url('tulki_spit.jpg');
+    src: url('tulki_spit.jpg');
     opacity: 82%;
-    height: 628px;
-    width: 100%;
+    height: 5em;
+    width: 10em;
     margin: auto;
     align-self: center;
-		background-size: cover;
+}
+
+.bannerPic {
+	width: 100%;
+	margin: auto;
 }
 
 #logo {
@@ -112,11 +127,18 @@ ul {
   margin-right: auto;*/
   background-image: url(tulkiler.gif);
   margin: auto;
-  width: 500px;
-  height: 600;
+  max-width: 100%;
+  /* height: auto; */
   /*width: 40%;*/
   display: block;
   cursor: url(catty3.png), auto;
+  background-repeat: no-repeat;
+}
+
+#mdimg {
+
+	/* align-self: center;
+	margin: auto; */
 }
 
 [class$="P"] {
@@ -214,12 +236,13 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     border: 3px;
-  }
+}
+
 h4 {
     text-align: center;
-  }
+}
 p {
-    border: 3px;
+    /* border: 3px; */
   }
 .first {
     width: 25%;
@@ -245,4 +268,147 @@ a[id] {
     border-right: 1px solid white;
     border-left: 1px solide white;
     border-radius: 1rem 1rem 1rem 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+	#task {
+		display: inline-grid;
+		width: 100%;
+		float: left;
+	}
+	
+	#requirements {
+		display: inline-grid;
+		width: 33%;
+		float: left;
+	}
+
+	#submission {
+		display: inline-grid;
+		width: 33%;
+		float: left;
+	}
+
+	#grading {
+		display: inline-grid;
+		width: 33%;
+		float: left;
+	}
+
+	.aside_content {
+		display: inline-grid;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	#task {
+		display: inline-grid;
+		width: 100%;
+		float: left;
+	}
+	
+	#requirements {
+		display: inline-grid;
+		width: 48%;
+		float: left;
+		padding: 1%;
+	}
+
+	#submission {
+		display: inline-grid;
+        width: 48%;
+        float: left;
+        padding: 1%;
+
+	}
+
+	#grading {
+		display: inline-grid;
+		width: 48%;
+		float: left;
+		padding: 1%;
+	}
+
+	.aside_content {
+		display: inline-grid;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.inTask {
+		font-size: 10px;
+	}
+
+	#mdimg {
+		width: 100%;
+		height: auto;
+	}
+
+	#requirements {
+		margin: auto;
+		width: 95%;
+	}
+
+	#submission {
+		margin: auto;
+		width: 95%;
+	}
+
+	#grading {
+		margin: auto;
+		width: 95%;
+	}
+
+	.banner {
+		display: grid;
+		background-image: url('tulki_spit2.jpg');
+		opacity: 82%;
+		/* height: auto; */
+		/* width: 100%; */
+	}
+
+	.menu {
+		display: grid;
+		width: 80%;
+		/* align-self: center; */
+		/* margin: auto; */
+		/* float: left; */
+	}
+
+	.main_content {
+		display: grid;
+		/* display: ; */
+	}
+
+	.menu li {
+		display: block;
+		background-size: 4em;
+		/* background-repeat: no-repeat; */
+		padding: 3em;
+		margin: 5px;
+		/* margin-left: 9em;
+		margin-right: 9em;
+		margin-top: 0;
+		margin-bottom: 0; */
+	}
+
+	.lay {
+		display: block;
+		border: 3px;
+		margin: auto;
+	}
+
+	.first {
+		width: 80%;
+	}
+
+	.second {
+		width: 80%;
+	}
+
+	.third {
+		width: 80%;
+	}
 }

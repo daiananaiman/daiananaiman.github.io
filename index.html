@@ -10,7 +10,14 @@
 <body>
   <!-- HEADER -->
   <header>
-    <div class="banner">Web Programming...</div>
+    <div class="bannerdiv">Web Programming...
+      <picture >
+          <source srcset="tulki_spit3.jpg" media="(max-width: 768px)">
+          <source srcset="tulki_spit2.jpg" media="(max-width: 1024px)">
+          <source srcset="tulki_spit.jpg">
+          <img src="tulki_spit.jpg" alt="Medium image" class="bannerPic">
+      </picture>
+    </div>
   </header>
 
   <!-- Navbar -->
@@ -131,8 +138,9 @@
         it is required to insert a photo of your group
         in this <strong>&lt;img&gt;</strong> element and write your names in the
         following list items. <br>
-         <img src="planets.jpeg" alt="" width="300px" height="210">
-
+      </p>
+      <img src="planets.jpeg" alt="" width="300px" height="210" id="mdimg">
+      <p>
         <ul id="groupUL">
           <li>Meruyert Bizhanova</li>
           <li>Daiana Naiman</li>
