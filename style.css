@@ -136,9 +136,8 @@ ul {
 }
 
 #mdimg {
-
-	/* align-self: center;
-	margin: auto; */
+	align-self: center;
+	margin: auto;
 }
 
 [class$="P"] {
@@ -336,14 +335,14 @@ a[id] {
 	}
 }
 
+#mdimg {
+	width: 100%;
+	height: auto;
+}
+
 @media screen and (max-width: 767px) {
 	.inTask {
 		font-size: 10px;
-	}
-
-	#mdimg {
-		width: 100%;
-		height: auto;
 	}
 
 	#requirements {
@@ -351,9 +350,15 @@ a[id] {
 		width: 95%;
 	}
 
+	.submissionHeader {
+		width: 95%;
+		margin-left: 4%;
+	}
+
 	#submission {
 		margin: auto;
-		width: 95%;
+		width: 100%;
+		padding: 0;
 	}
 
 	#grading {
