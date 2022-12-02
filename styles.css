@@ -26,6 +26,11 @@ img {
     text-align: center;
 }
 
+.Daiana{
+    color:rgb(87, 204, 165);
+    text-shadow: rgb(226, 93, 175) 1px 0 5px;
+}
+
 #p_i {
     font-family: serif;
     font-size: min(1.0rem);
