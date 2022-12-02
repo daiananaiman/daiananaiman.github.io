@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../resources/forms.css">
+    <title>Daiana Naiman|Resume</title>
+  </head>
+  
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Forms-->
+    <div class="forms__container">
+      <h1 id="forms_title">Contact Form</h1>
+      <form action="https://formspree.io/f/xwkzddvq" method="POST">
+        <input type="text" name="Name" placeholder="Full Name" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <input type="hidden" name="_language" value="en" />
+        <select name="Continent" id="">
+            <option value="">Africa</option>
+            <option value="">Asia</option>
+            <option value="">Australia</option>
+            <option value="">Europe</option>
+            <option value="">North America</option>
+            <option value="">South America</option>
+        </select>
+        <textarea name="Message" placeholder="Message" required></textarea>
+        <button type="submit" id="forms__button">Send</button>
+      </form>
+    </div>
+
+    <div class="bottom">
+        <p id = "p_bottom">Social Media</p>
+        <a class="btn btn-primary" style="padding: 0; border: none; background: none;" href="https://www.instagram.com/daiana.nai/" role="button">
+          <i class="bi bi-instagram" style="font-size: 3rem;"></i>
+        </a>
+        <a class="btn btn-primary" style="padding: 0; border: none; background: none;" href="https://github.com/daiananaiman" role="button">
+          <i class="bi bi-github" style="font-size: 3rem;"></i>
+        </a>
+        <a class="btn btn-primary" style="padding: 0; border: none; background: none;" href="https://wa.me/77010771672" role="button">
+          <i class="bi bi-whatsapp" style="font-size: 3rem;"></i>
+        </a>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer id="footer"></footer>
+
+    <!-- My JavaScript code -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
